@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Noto Sans JP";
+}
+
+section {
+  position: relative;
+  width: fit-content;
+}
+
+
+.ex1 {
+  text-shadow: royalblue;
+}
+
+.ex1::after{
+    content:"";
+    background-color:rgb(168, 18, 206);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    transition: 2s;
+}
+
+.ex1:hover::after{
+    background-color: rgb(156, 8, 137);
+    width: 100%;
+}
+
+h1:first-child {
+  font-size: 50px;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.flex {
+  display:flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#newsletter{
+  background-color: purple;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  }
+
+button {
+  background-color: rgba(6, 255, 101, 0.678);
+  margin-left: 5px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#newsletter img{
+  width: 50px;
+  align-content: left;
+  filter: brightness(90);
+
+}
+.logo{
+  position: absolute;
+  margin-right: 95%;
+}
+
+.logo1 {
+  width: 130px;
+  height: auto;
+  position: relative;
+  margin-right: 90%;
+}
+
+#champs_newsletter div{
+  margin-top: 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 20rem;
+  padding-left: 10vh;
+  padding-right: 10vh;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: inline-block;
+  align-items: center;
+  min-height: 10vh;
+}
+
+
+.nav-links {
+  display: flex;
+  flex: 1 1 20rem;
+  list-style: none;
+  justify-content: space-around;
+}
+
+ul li a{
+  text-decoration: none;
+  list-style: none;
+  position: relative;
+}  
+
+ul li {
+  margin-top: 2vh;
+  list-style: none;
+}
+
+.margintop {
+  margin-top: 3vh;
+}
+
+section:nth-child(2) li::before {
+  content: "\2022";
+  color: purple;
+  padding-right: 0.5em;
+}
+
+#contenu {
+  margin-top: 10vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-bottom: 5vh;
+}
+
+
+
+footer {
+  width: auto;
+  height: 30vh;
+  background-color: rgb(44, 38, 38);
+}
+
+#section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top : 40px;
+  align-content: center;
+  justify-content: space-evenly;
+  height: fit-content;
+}
+
+footer>section>div>a {
+  text-decoration: none;
+  color: white;
+}
+
+footer>img {
+  height: 120px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-left: 45vw;
+  padding-top: 5vh;
+}
+
+footer>p {
+  display: flex;
+  margin-left: 45vw;
+  color: grey;
+}
+
